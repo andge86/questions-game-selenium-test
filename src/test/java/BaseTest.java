@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class BaseTest {
 
-   private final String GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google_chrome";
+   private final String GOOGLE_CHROME_BIN = "/app/.apt/usr/bin/google_chrome";
     private final String CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver";
 
 @Test
@@ -15,7 +15,7 @@ public class BaseTest {
     System.setProperty("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome");
     System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.setBinary(GOOGLE_CHROME_PATH);
+        options.setBinary(GOOGLE_CHROME_BIN);
         options.addArguments("--disable-gpu", "--no-sandbox", "--headless", "--enable-javascript");
         ChromeDriver driver = new ChromeDriver(options);
 
