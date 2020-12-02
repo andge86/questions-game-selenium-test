@@ -11,9 +11,9 @@ public class BaseTest {
 @Test
     public void testTheFlow(){
 
-      //  System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_PATH);
+        System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_PATH);
         ChromeOptions options = new ChromeOptions();
-      //  options.setBinary(GOOGLE_CHROME_PATH);
+        options.setBinary(GOOGLE_CHROME_PATH);
         options.addArguments("--disable-gpu", "--no-sandbox", "--headless");
         ChromeDriver driver = new ChromeDriver(options);
 
