@@ -11,10 +11,12 @@ public class BaseTest {
 @Test
     public void testTheFlow(){
 
-        System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_PATH);
+   //     System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_PATH);
+    System.setProperty("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome");
+    System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.setBinary(GOOGLE_CHROME_PATH);
-        options.addArguments("--disable-gpu", "--no-sandbox", "--headless");
+        options.addArguments("--disable-gpu", "--no-sandbox", "--headless", "--enable-javascript");
         ChromeDriver driver = new ChromeDriver(options);
 
         driver.manage().window().maximize();
