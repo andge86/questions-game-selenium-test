@@ -1,1 +1,1 @@
-web: mvn test
+release: mvn test
