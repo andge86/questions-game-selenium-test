@@ -19,7 +19,7 @@ public class BaseTest {
 
         driver.manage().window().maximize();
         driver.get("https://www.selenium.dev");
-        Assert.assertEquals(driver.findElementByXPath("/html/body/section[2]/h2").getText(), "Getting Started");
+        Assert.assertEquals(driver.findElementByXPath("/html/body/section[2]/h2").getText(), "Getting Started123");
 
     }
 }
