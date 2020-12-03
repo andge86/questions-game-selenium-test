@@ -13,7 +13,7 @@ public class BaseTest {
 
         //     System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_PATH);
         System.setProperty("GOOGLE_CHROME_PATH", "/app/.apt/usr/bin/google-chrome");
-        System.setProperty("webdriver.chrome.driver", "/app/.chromedriver/bin/chromedriver");
+        System.setProperty("CHROMEDRIVER_PATH", "/app/.chromedriver/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.setBinary(GOOGLE_CHROME_BIN);
         options.addArguments("--disable-gpu", "--no-sandbox", "--headless", "--disable-dev-sh-usage");
